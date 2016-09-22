@@ -101,7 +101,7 @@ namespace example4 {
 
         for (int i = MAX; i > 0; i--) {
             //TODO 4
-            cout << "Address of var[" << i << "] = " << intPointer-i << endl;
+            cout << "Address of var[" << i << "] = " << intPointer-i << endl ;
 
             //TODO 4
             cout << "Value of var[" << i << "] = " << intArray[i-1] << endl;
