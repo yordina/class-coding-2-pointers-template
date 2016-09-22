@@ -79,7 +79,7 @@ namespace example3 {
             cout << "Address of var[" << i << "] =  " << intPointer + i<<"\n";
 
             //TODO 3
-            cout << "Value of var[" << i << "] = "<< intArray[i] <<"\n";
+            cout << "Value of var[" << i << "] = "<< intArray[i] <<"\n" ;
 
             //TODO 3// point to the next location
         }
