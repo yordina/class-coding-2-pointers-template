@@ -66,17 +66,20 @@ namespace example3 {
         //pointer addition
 
         //TODO 3 - integer array of size MAX
+        int intArray[MAX];
         //TODO 3 - integer pointer
+        int *intPointer;
 
         // let us have array address in pointer.
 
         //TODO 3 - point pointer to variable
+        intPointer = intArray;
         for (int i = 0; i < MAX; i++) {
             //TODO 3
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] =  " << intPointer + i<<"\n";
 
             //TODO 3
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = "<< intArray[i] <<"\n";
 
             //TODO 3// point to the next location
         }
@@ -310,7 +313,7 @@ int main() {
     cout << endl;
     example2::example();
     cout << endl;
-    //example3::example();
+    example3::example();
     //example4::example();
     //example5::example();
     //example6::example();
