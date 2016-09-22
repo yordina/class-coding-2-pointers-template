@@ -92,16 +92,19 @@ namespace example4 {
         //pointer subtraction
 
         //TODO 4 - integer array of size MAX
+        int intArray[MAX];
         //TODO 4 - integer pointer
+        int *intPointer;
 
         //TODO 4// let us have address of the last element in pointer.
+        intPointer = intArray + MAX - 1;
 
         for (int i = MAX; i > 0; i--) {
             //TODO 4
-            cout << "Address of var[" << i << "] = ";
+            cout << "Address of var[" << i << "] = " << intPointer-i << endl;
 
             //TODO 4
-            cout << "Value of var[" << i << "] = ";
+            cout << "Value of var[" << i << "] = " << intArray[i-1] << endl;
 
             //TODO 4
             // point to the previous location
@@ -309,12 +312,12 @@ namespace example13 {
 
 int main() {
 
-    example1::example();
-    cout << endl;
-    example2::example();
-    cout << endl;
-    example3::example();
-    //example4::example();
+    //example1::example();
+    //cout << endl;
+    //example2::example();
+    //cout << endl;
+   // example3::example();
+    example4::example();
     //example5::example();
     //example6::example();
     //example7::example();
